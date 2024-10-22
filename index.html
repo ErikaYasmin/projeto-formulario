@@ -8,57 +8,64 @@
     <title>Formulário de Pesquisa</title>
 </head>
 <body>
-    <main>
+    <header>
         <h2>Preencha o formulário</h2>
-        <h3>Comente o que achou deste formulário e ajude-nós para nossa melhoria</h3>
-        <div>
-            <section>
-                <form action="cadastro.php" method="post" autocomplete="on">
-                    <p>
-                        <label for="inome">Nome</label>
-                        <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required maxlength="15" autocomplete="username">
-                    </p>
-                    <p>
-                        <label for="iemail">Email</label>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu email" required autocomplete="email">
-                    </p>
-                    <p>
-                        <p>Qual seu nível de especialidade?</p>
-                        <select name="especial" id="iespecial">
-                            <option value="" selected>Selecione</option>
-                            <option value="estud">Estudante</option>
-                            <option value="devfront">Desenvolvedor Front-End</option>
-                            <option value="devback">Desenvolvedor Back-End</option>
-                            <option value="full">Desenvolvedor Full Stack</option>
-                            <option value="outro">Outros</option>
-                        </select>
-                    </p>
-                    <p>
-                        <p>Você já praticou alguma dessas atividades?</p>
-                        <input type="checkbox" name="front" id="ifront" value="front"> <label for="ifront">Front-End</label> <br/>
-                        <input type="checkbox" name="back" id="iback" value="back"> <label for="iback">Back-End</label> <br/>
-                        <input type="checkbox" name="bdd" id="ibdd" value="bdd"> <label for="ibdd">Banco de Dados</label> <br/>
-                        <input type="checkbox" name="design" id="idesign" value="desuiux"> <label for="idesign">Design UI/UX</label> <br/>
-                        <input type="checkbox" name="desres" id="idesres" value="desres"> <label for="idesres">Design Responsivo</label> <br/>
-                        <input type="checkbox" name="seo" id="iseo" value="seo"> <label for="iseo">SEO</label> <br/>
-                        <input type="checkbox" name="git" id="igit" value="git"> <label for="igit">Git e GitHub</label>
-                    </p>
-                    <p>
-                        <p>Você indicaria este formulário para algum amigo?</p>
-                        <input type="radio" name="indica" id="icerteza" value="certeza"> <label for="icerteza">Com certeza</label> <br/>
-                        <input type="radio" name="indica" id="italvez" value="talvez"> <label for="italvez">Talvez</label> <br/>
-                        <input type="radio" name="indica" id="inocerteza" value="nocerteza"> <label for="inocerteza">Não tenho certeza</label> <br/>
-                    </p>
-                    <p>
-                        <p>Deseja deixar alguma sugestão?</p>
-                        <textarea name="texto" id="itexto" cols="30" rows="5" placeholder="Digite sua sugestão"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Enviar">
-                    </p>
-                </form>
-            </section>
-        </div>
+        <h3>Comente o que achou deste formulário e ajude-me para melhorias</h3>
+    </header>
+    <main>
+        <section>
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" placeholder="Digite seu nome" maxlength="15" autocomplete="username" required>
+                </p>
+                <p>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu email" autocomplete="email" required>
+                </p>
+                <p>
+                    <p>Qual seu nível de especialidade?</p>
+                    <select name="especial" id="iespecial" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="estud">Estudante</option>
+                        <option value="devfront">Desenvolvedor Front-End</option>
+                        <option value="devback">Desenvolvedor Back-End</option>
+                        <option value="full">Desenvolvedor Full Stack</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <p>Você já praticou alguma dessas atividades?</p>
+                    <input type="checkbox" name="front" id="ifront" value="front"> 
+                    <label for="ifront">Front-End</label> <br/>
+                    <input type="checkbox" name="back" id="iback" value="back"> 
+                    <label for="iback">Back-End</label> <br/>
+                    <input type="checkbox" name="bdd" id="ibdd" value="bdd"> 
+                    <label for="ibdd">Banco de Dados</label> <br/>
+                    <input type="checkbox" name="design" id="idesign" value="desuiux"> 
+                    <label for="idesign">Design UI/UX</label> <br/>
+                    <input type="checkbox" name="desres" id="idesres" value="desres"> 
+                    <label for="idesres">Design Responsivo</label> <br/>
+                    <input type="checkbox" name="seo" id="iseo" value="seo"> 
+                    <label for="iseo">SEO</label> <br/>
+                    <input type="checkbox" name="git" id="igit" value="git"> 
+                    <label for="igit">Git e GitHub</label>
+                </p>
+                <p>
+                    <p>Você indicaria este formulário para algum amigo?</p>
+                    <input type="radio" name="indica" id="icerteza" value="certeza"> <label for="icerteza">Com certeza</label> <br/>
+                    <input type="radio" name="indica" id="italvez" value="talvez"> <label for="italvez">Talvez</label> <br/>
+                    <input type="radio" name="indica" id="inocerteza" value="nocerteza"> <label for="inocerteza">Não tenho certeza</label> <br/>
+                </p>
+                <p>
+                    <p>Deseja deixar alguma sugestão?</p>
+                    <textarea name="texto" id="itexto" cols="30" rows="5" placeholder="Digite sua sugestão"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </section>
     </main>
 </body>
 </html>
