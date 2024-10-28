@@ -9,16 +9,15 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
     text-align: center;
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     font-family: 'Oxanium', sans-serif;
+    font-size: 1.2em;
     background-color: black;
-    background-image: url(imagens/img-fundo.jpg);
     color: white;
 }
 
